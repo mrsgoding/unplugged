@@ -160,6 +160,10 @@ input.btn {
    border-bottom: none !important;
 }
 
+.last-item a {
+  color: #222;
+}
+
 /* Header =========================== */
 .main-header {
  width: 100%;
@@ -195,6 +199,10 @@ nav ul li a {
   font-size: 1.125em;
   text-transform: uppercase;
   color: #333;
+}
+
+nav i {
+	padding-right: 10px;
 }
 
 /* Main Content =========================== */
@@ -247,6 +255,10 @@ main {
   display: none;
 }
 
+aside i {
+	padding-right: 10px;
+}
+
 /* Feed Section =========================== */
 
 .feed {
@@ -284,7 +296,6 @@ main {
 }
 
 /* ABOUT PAGE ================================ */
-
 .contact-info{
    width: 100%;
    padding-top: 30px;
@@ -298,6 +309,21 @@ main {
 .contact-info ul li {
    display: inline-block;
    vertical-align: top;
+}
+
+.map-container {
+  position: relative;
+  padding-bottom: 75%;
+  height: 0;
+  overflow: hidden;
+}
+
+.map-container iframe {
+  position: absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
 }
 
 .strong {
@@ -559,6 +585,18 @@ footer {
   .contact-info {
     width: 40%;
     float: left;
+  }
+
+  .map-container {
+    position: relative;
+    padding-bottom: 40%;
+    height: 0;
+    overflow: hidden;
+    width: 58%;
+    float: left;
+    border: 1px solid #333;
+    margin-bottom: 40px;
+    margin-top: 30px;
   }
 
   .mission {
